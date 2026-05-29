@@ -6,7 +6,7 @@ const EVENTS = [
   {
     icon: PlusCircle,
     iconClass: "text-primary",
-    dotClass: "bg-primary/20 border-primary/40",
+    dotClass: "bg-[color-mix(in_oklch,var(--primary)_20%,var(--card))] border-[color-mix(in_oklch,var(--primary)_40%,var(--card))]",
     user: "AP",
     action: "created this card",
     time: "May 28, 10:04 AM",
@@ -14,7 +14,7 @@ const EVENTS = [
   {
     icon: ArrowRight,
     iconClass: "text-chart-2",
-    dotClass: "bg-chart-2/20 border-chart-2/40",
+    dotClass: "bg-[color-mix(in_oklch,var(--chart-2)_20%,var(--card))] border-[color-mix(in_oklch,var(--chart-2)_40%,var(--card))]",
     user: "AP",
     action: 'moved from Inbox → Doing',
     time: "May 28, 11:30 AM",
@@ -30,7 +30,7 @@ const EVENTS = [
   {
     icon: ArrowRight,
     iconClass: "text-chart-2",
-    dotClass: "bg-chart-2/20 border-chart-2/40",
+    dotClass: "bg-[color-mix(in_oklch,var(--chart-2)_20%,var(--card))] border-[color-mix(in_oklch,var(--chart-2)_40%,var(--card))]",
     user: "AP",
     action: "moved from Doing → Done",
     time: "May 28, 4:52 PM",
