@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { BoardMock } from "@/components/landing/board-mock"
+import { InteractiveBoardMock } from "@/components/landing/interactive-board-mock"
 import { GitBranch, ArrowRight } from "lucide-react"
 
 export function Hero() {
@@ -43,9 +43,9 @@ export function Hero() {
             <span className="size-2.5 rounded-full bg-primary/50" />
             <span className="ml-3 text-[11px] font-medium text-muted-foreground/60">FlowSpace — My workspace</span>
           </div>
-          <BoardMock />
+          <InteractiveBoardMock />
         </div>
-        <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-48 bg-linear-to-t from-background to-transparent pointer-events-none" />
       </div>
     </div>
   )
