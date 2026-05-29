@@ -1,65 +1,93 @@
-import Image from "next/image";
+import { Nav } from "@/components/landing/nav"
+import { Hero } from "@/components/landing/hero"
+import { FeatureGrid } from "@/components/landing/feature-grid"
+import { ShortcutShowcaseSection } from "@/components/landing/shortcut-showcase-section"
+import { Section } from "@/components/landing/section"
+import { MarkdownPreview } from "@/components/landing/markdown-preview"
+import { CardDetailMock } from "@/components/landing/card-detail-mock"
+import { LaneManager } from "@/components/landing/lane-manager"
+import { HistoryTimeline } from "@/components/landing/history-timeline"
+import { OptimisticStrip } from "@/components/landing/optimistic-strip"
+import { SearchMock } from "@/components/landing/search-mock"
+import { CtaFooter } from "@/components/landing/cta-footer"
 
-export default function Home() {
+export default function V2() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="flex flex-col min-h-full bg-background">
+      <Nav />
+      <main>
+        <Hero />
+
+        <FeatureGrid />
+
+        <ShortcutShowcaseSection />
+
+        <Section
+          id="markdown"
+          eyebrow="Markdown"
+          heading="Write naturally, read beautifully."
+          description="Cards support full Markdown. Toggle between source and rendered view. Paste an image from your clipboard and it embeds inline."
+        >
+          <div className="grid gap-8 lg:grid-cols-2 items-start">
+            <CardDetailMock />
+            <MarkdownPreview />
+          </div>
+        </Section>
+
+        <Section
+          id="lanes"
+          eyebrow="Customise"
+          heading="Your lanes, your way."
+          description="Rename, reorder, add, or delete lanes any time. The five defaults are a starting point, not a mandate."
+          className="bg-sidebar/20"
+        >
+          <div className="grid gap-8 lg:grid-cols-2 items-start">
+            <div className="space-y-4">
+              <LaneManager />
+              <p className="text-sm text-muted-foreground px-1">
+                Hover any lane to reveal the drag handle, rename, and delete controls. Nothing is permanent — lanes
+                can be renamed or removed whenever your workflow changes.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-5 space-y-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Default lanes
+              </p>
+              <div className="grid grid-cols-1 gap-2">
+                {[
+                  { name: "Inbox", desc: "Everything unprocessed lands here first." },
+                  { name: "Today", desc: "What you commit to finishing today." },
+                  { name: "This Week", desc: "On your radar for the next few days." },
+                  { name: "Doing", desc: "In active progress right now." },
+                  { name: "Done", desc: "Shipped. Archived automatically after 30 days." },
+                ].map((lane) => (
+                  <div key={lane.name} className="flex items-baseline gap-3">
+                    <span className="w-20 shrink-0 text-xs font-semibold text-foreground">{lane.name}</span>
+                    <span className="text-xs text-muted-foreground">{lane.desc}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        <Section
+          id="history"
+          eyebrow="History & sync"
+          heading="Every move, recorded. Every update, instant."
+          description="Cards carry a full audit trail — created, moved, edited — so nothing is ever lost. Optimistic updates mean the board feels local even when you're on a shaky connection."
+        >
+          <div className="grid gap-8 lg:grid-cols-2 items-start">
+            <HistoryTimeline />
+            <div className="space-y-4">
+              <OptimisticStrip />
+              <SearchMock />
+            </div>
+          </div>
+        </Section>
       </main>
+
+      <CtaFooter />
     </div>
-  );
+  )
 }

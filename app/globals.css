@@ -127,4 +127,10 @@
   html {
     @apply font-sans;
   }
+
+  @media only screen and (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+      @apply scroll-smooth;
+    }
+  }
 }
