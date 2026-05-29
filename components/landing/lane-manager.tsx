@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, memo, useCallback } from "react"
 import { createPortal } from "react-dom"
 import {
   DndContext,
@@ -33,7 +33,7 @@ interface LaneRowVisualProps {
   isOverlay?: boolean
 }
 
-function LaneRowVisual({ name, index, dragHandleProps, isOverlay }: LaneRowVisualProps) {
+const LaneRowVisual = memo(function LaneRowVisual({ name, index, dragHandleProps, isOverlay }: LaneRowVisualProps) {
   return (
     <div
       className={cn(
@@ -73,9 +73,9 @@ function LaneRowVisual({ name, index, dragHandleProps, isOverlay }: LaneRowVisua
       )}
     </div>
   )
-}
+})
 
-function SortableLaneRow({ name, index }: { name: string; index: number }) {
+const SortableLaneRow = memo(function SortableLaneRow({ name, index }: { name: string; index: number }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: name })
 
   return (
@@ -87,24 +87,25 @@ function SortableLaneRow({ name, index }: { name: string; index: number }) {
       <LaneRowVisual name={name} index={index} dragHandleProps={{ ...listeners, ...attributes }} />
     </div>
   )
-}
+})
 
 export function LaneManager() {
   const [lanes, setLanes] = useState(DEFAULT_LANES)
   const [activeLane, setActiveLane] = useState<string | null>(null)
   const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  useEffect(() => { setMounted(true) }, [])
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   )
 
-  function onDragStart({ active }: DragStartEvent) {
+  const onDragStart = useCallback(({ active }: DragStartEvent) => {
     setActiveLane(active.id as string)
-  }
+  }, [])
 
-  function onDragEnd({ active, over }: DragEndEvent) {
+  const onDragEnd = useCallback(({ active, over }: DragEndEvent) => {
     setActiveLane(null)
     if (!over || active.id === over.id) return
     setLanes((prev) => {
@@ -112,7 +113,7 @@ export function LaneManager() {
       const newIdx = prev.indexOf(over.id as string)
       return arrayMove(prev, oldIdx, newIdx)
     })
-  }
+  }, [])
 
   return (
     <div className="rounded-xl border border-border bg-card p-5">

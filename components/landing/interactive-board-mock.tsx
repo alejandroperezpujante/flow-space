@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, memo, useCallback, useMemo } from "react"
 import { createPortal } from "react-dom"
 import {
   DndContext,
@@ -27,7 +27,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Plus } from "lucide-react"
 import { type CardData, type LaneData, LANES, labelStyles } from "./board-data"
 
-function CardVisual({ card, compact }: { card: CardData; compact?: boolean }) {
+const CardVisual = memo(function CardVisual({ card, compact }: { card: CardData; compact?: boolean }) {
   return (
     <div
       className={cn(
@@ -69,9 +69,9 @@ function CardVisual({ card, compact }: { card: CardData; compact?: boolean }) {
       </div>
     </div>
   )
-}
+})
 
-function SortableCard({ card, compact }: { card: CardData; compact?: boolean }) {
+const SortableCard = memo(function SortableCard({ card, compact }: { card: CardData; compact?: boolean }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: card.id })
 
   return (
@@ -85,11 +85,39 @@ function SortableCard({ card, compact }: { card: CardData; compact?: boolean }) 
       <CardVisual card={card} compact={compact} />
     </div>
   )
-}
+})
 
 function findLaneByCardId(lanes: LaneData[], cardId: string): LaneData | undefined {
   return lanes.find((l) => l.cards.some((c) => c.id === cardId))
 }
+
+const LaneColumn = memo(function LaneColumn({ lane }: { lane: LaneData }) {
+  const items = useMemo(() => lane.cards.map((c) => c.id), [lane.cards])
+
+  return (
+    <div
+      id={lane.id}
+      className="flex flex-col shrink-0 w-52 gap-2 p-3 rounded-2xl bg-sidebar"
+    >
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-1.5">
+          <span className="font-semibold text-foreground text-xs">{lane.name}</span>
+          <span className="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]">
+            {lane.cards.length}
+          </span>
+        </div>
+        <Plus className="text-muted-foreground/60 shrink-0 size-3.5" />
+      </div>
+      <SortableContext items={items} strategy={verticalListSortingStrategy}>
+        <div className="flex flex-col gap-1.5 min-h-4">
+          {lane.cards.map((card) => (
+            <SortableCard key={card.id} card={card} />
+          ))}
+        </div>
+      </SortableContext>
+    </div>
+  )
+})
 
 interface InteractiveBoardMockProps {
   className?: string
@@ -99,20 +127,21 @@ export function InteractiveBoardMock({ className }: InteractiveBoardMockProps) {
   const [lanes, setLanes] = useState<LaneData[]>(LANES)
   const [activeCard, setActiveCard] = useState<CardData | null>(null)
   const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  useEffect(() => { setMounted(true) }, [])
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   )
 
-  function onDragStart({ active }: DragStartEvent) {
+  const onDragStart = useCallback(({ active }: DragStartEvent) => {
     const sourceLane = findLaneByCardId(lanes, active.id as string)
     const card = sourceLane?.cards.find((c) => c.id === active.id)
     setActiveCard(card ?? null)
-  }
+  }, [lanes])
 
-  function onDragOver({ active, over }: DragOverEvent) {
+  const onDragOver = useCallback(({ active, over }: DragOverEvent) => {
     if (!over) return
     const activeId = active.id as string
     const overId = over.id as string
@@ -145,9 +174,9 @@ export function InteractiveBoardMock({ className }: InteractiveBoardMockProps) {
       }
       return next
     })
-  }
+  }, [])
 
-  function onDragEnd({ active, over }: DragEndEvent) {
+  const onDragEnd = useCallback(({ active, over }: DragEndEvent) => {
     setActiveCard(null)
     if (!over || active.id === over.id) return
 
@@ -164,7 +193,7 @@ export function InteractiveBoardMock({ className }: InteractiveBoardMockProps) {
         l.id === lane.id ? { ...l, cards: arrayMove(l.cards, oldIdx, newIdx) } : l
       )
     })
-  }
+  }, [])
 
   return (
     <DndContext
@@ -177,28 +206,7 @@ export function InteractiveBoardMock({ className }: InteractiveBoardMockProps) {
     >
       <div className={cn("flex gap-3 overflow-x-auto pb-2 text-sm", className)}>
         {lanes.map((lane) => (
-          <div
-            key={lane.id}
-            id={lane.id}
-            className="flex flex-col shrink-0 w-52 gap-2 p-3 rounded-2xl bg-sidebar"
-          >
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1.5">
-                <span className="font-semibold text-foreground text-xs">{lane.name}</span>
-                <span className="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]">
-                  {lane.cards.length}
-                </span>
-              </div>
-              <Plus className="text-muted-foreground/60 shrink-0 size-3.5" />
-            </div>
-            <SortableContext items={lane.cards.map((c) => c.id)} strategy={verticalListSortingStrategy}>
-              <div className="flex flex-col gap-1.5 min-h-4">
-                {lane.cards.map((card) => (
-                  <SortableCard key={card.id} card={card} />
-                ))}
-              </div>
-            </SortableContext>
-          </div>
+          <LaneColumn key={lane.id} lane={lane} />
         ))}
       </div>
       {mounted && createPortal(
