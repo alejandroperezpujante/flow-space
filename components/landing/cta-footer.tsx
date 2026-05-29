@@ -19,9 +19,11 @@ export function CtaFooter() {
             Get the board
             <ArrowRight className="size-4" />
           </Button>
-          <Button size="lg" variant="outline" className="gap-2 rounded-full px-6">
-            <GitBranch className="size-4" />
-            View source
+          <Button size="lg" variant="outline" className="gap-2 rounded-full px-6" asChild>
+            <a href="https://github.com/alejandroperezpujante/flow-space" target="_blank" rel="noopener noreferrer">
+              <GitBranch className="size-4" />
+              View source
+            </a>
           </Button>
         </div>
         <p className="mt-12 text-xs text-muted-foreground/60">

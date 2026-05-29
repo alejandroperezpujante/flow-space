@@ -17,9 +17,11 @@ export function Nav() {
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Button variant="outline" size="sm" className="gap-1.5 rounded-full">
-            <GitBranch className="size-3.5" />
-            GitHub
+          <Button variant="outline" size="sm" className="gap-1.5 rounded-full" asChild>
+            <a href="https://github.com/alejandroperezpujante/flow-space" target="_blank" rel="noopener noreferrer">
+              <GitBranch className="size-3.5" />
+              GitHub
+            </a>
           </Button>
         </div>
       </div>

@@ -20,9 +20,11 @@ export function Hero() {
             Get the board
             <ArrowRight className="size-4" />
           </Button>
-          <Button size="lg" variant="outline" className="gap-2 rounded-full px-6">
-            <GitBranch className="size-4" />
-            View on GitHub
+          <Button size="lg" variant="outline" className="gap-2 rounded-full px-6" asChild>
+            <a href="https://github.com/alejandroperezpujante/flow-space" target="_blank" rel="noopener noreferrer">
+              <GitBranch className="size-4" />
+              View on GitHub
+            </a>
           </Button>
         </div>
       </div>
