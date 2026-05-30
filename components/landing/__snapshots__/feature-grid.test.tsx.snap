@@ -1,0 +1,405 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FeatureGrid snapshot > renders consistently 1`] = `
+<DocumentFragment>
+  <section
+    class="py-20 px-6"
+    id="features"
+  >
+    <div
+      class="mx-auto max-w-5xl"
+    >
+      <p
+        class="mb-3 text-xs font-semibold uppercase tracking-widest text-primary"
+      >
+        Features
+      </p>
+      <h2
+        class="font-heading text-3xl font-semibold tracking-tight text-foreground mb-4"
+      >
+        Everything you actually need.
+      </h2>
+      <p
+        class="text-muted-foreground text-lg mb-10 max-w-2xl"
+      >
+        No sprints, no burndowns, no dashboards. Just a board you'll open every day.
+      </p>
+      <div
+        class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
+          class="group/card flex flex-col gap-6 overflow-hidden rounded-xl bg-card py-6 text-sm text-card-foreground shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group transition-all hover:-translate-y-0.5 hover:shadow-md"
+          data-size="default"
+          data-slot="card"
+        >
+          <div
+            class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-6 group-data-[size=sm]/card:px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4"
+            data-slot="card-header"
+          >
+            <div
+              class="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-primary/8 text-primary"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-layout-grid size-4.5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  height="7"
+                  rx="1"
+                  width="7"
+                  x="3"
+                  y="3"
+                />
+                <rect
+                  height="7"
+                  rx="1"
+                  width="7"
+                  x="14"
+                  y="3"
+                />
+                <rect
+                  height="7"
+                  rx="1"
+                  width="7"
+                  x="14"
+                  y="14"
+                />
+                <rect
+                  height="7"
+                  rx="1"
+                  width="7"
+                  x="3"
+                  y="14"
+                />
+              </svg>
+            </div>
+            <div
+              class="font-heading text-base leading-normal font-medium group-data-[size=sm]/card:text-sm"
+              data-slot="card-title"
+            >
+              Rich cards
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+              data-slot="card-description"
+            >
+              Every card carries a title, a full Markdown body, an optional due date, colour labels, and an assignee. No filler fields.
+            </div>
+          </div>
+        </div>
+        <div
+          class="group/card flex flex-col gap-6 overflow-hidden rounded-xl bg-card py-6 text-sm text-card-foreground shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group transition-all hover:-translate-y-0.5 hover:shadow-md"
+          data-size="default"
+          data-slot="card"
+        >
+          <div
+            class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-6 group-data-[size=sm]/card:px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4"
+            data-slot="card-header"
+          >
+            <div
+              class="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-chart-2/15 text-chart-2"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-grip-vertical size-4.5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="9"
+                  cy="12"
+                  r="1"
+                />
+                <circle
+                  cx="9"
+                  cy="5"
+                  r="1"
+                />
+                <circle
+                  cx="9"
+                  cy="19"
+                  r="1"
+                />
+                <circle
+                  cx="15"
+                  cy="12"
+                  r="1"
+                />
+                <circle
+                  cx="15"
+                  cy="5"
+                  r="1"
+                />
+                <circle
+                  cx="15"
+                  cy="19"
+                  r="1"
+                />
+              </svg>
+            </div>
+            <div
+              class="font-heading text-base leading-normal font-medium group-data-[size=sm]/card:text-sm"
+              data-slot="card-title"
+            >
+              Drag-and-drop
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+              data-slot="card-description"
+            >
+              Move cards across lanes or reorder within a lane with a grab-and-drop. Optimistic updates keep the UI instant.
+            </div>
+          </div>
+        </div>
+        <div
+          class="group/card flex flex-col gap-6 overflow-hidden rounded-xl bg-card py-6 text-sm text-card-foreground shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group transition-all hover:-translate-y-0.5 hover:shadow-md"
+          data-size="default"
+          data-slot="card"
+        >
+          <div
+            class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-6 group-data-[size=sm]/card:px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4"
+            data-slot="card-header"
+          >
+            <div
+              class="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-accent text-accent-foreground"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-columns3 lucide-columns-3 size-4.5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  height="18"
+                  rx="2"
+                  width="18"
+                  x="3"
+                  y="3"
+                />
+                <path
+                  d="M9 3v18"
+                />
+                <path
+                  d="M15 3v18"
+                />
+              </svg>
+            </div>
+            <div
+              class="font-heading text-base leading-normal font-medium group-data-[size=sm]/card:text-sm"
+              data-slot="card-title"
+            >
+              Your lanes, your rules
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+              data-slot="card-description"
+            >
+              Defaults: Inbox, Today, This Week, Doing, Done. Rename, add, delete, or reorder any lane at any time.
+            </div>
+          </div>
+        </div>
+        <div
+          class="group/card flex flex-col gap-6 overflow-hidden rounded-xl bg-card py-6 text-sm text-card-foreground shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group transition-all hover:-translate-y-0.5 hover:shadow-md"
+          data-size="default"
+          data-slot="card"
+        >
+          <div
+            class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-6 group-data-[size=sm]/card:px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4"
+            data-slot="card-header"
+          >
+            <div
+              class="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-primary/8 text-primary"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-keyboard size-4.5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 8h.01"
+                />
+                <path
+                  d="M12 12h.01"
+                />
+                <path
+                  d="M14 8h.01"
+                />
+                <path
+                  d="M16 12h.01"
+                />
+                <path
+                  d="M18 8h.01"
+                />
+                <path
+                  d="M6 8h.01"
+                />
+                <path
+                  d="M7 16h10"
+                />
+                <path
+                  d="M8 12h.01"
+                />
+                <rect
+                  height="16"
+                  rx="2"
+                  width="20"
+                  x="2"
+                  y="4"
+                />
+              </svg>
+            </div>
+            <div
+              class="font-heading text-base leading-normal font-medium group-data-[size=sm]/card:text-sm"
+              data-slot="card-title"
+            >
+              Keyboard-first
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+              data-slot="card-description"
+            >
+              Press n for a new card, / to search, g i to jump to Inbox, j/k to navigate, Enter to open, Esc to close.
+            </div>
+          </div>
+        </div>
+        <div
+          class="group/card flex flex-col gap-6 overflow-hidden rounded-xl bg-card py-6 text-sm text-card-foreground shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group transition-all hover:-translate-y-0.5 hover:shadow-md"
+          data-size="default"
+          data-slot="card"
+        >
+          <div
+            class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-6 group-data-[size=sm]/card:px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4"
+            data-slot="card-header"
+          >
+            <div
+              class="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-chart-2/15 text-chart-2"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-file-text size-4.5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                />
+                <path
+                  d="M14 2v5a1 1 0 0 0 1 1h5"
+                />
+                <path
+                  d="M10 9H8"
+                />
+                <path
+                  d="M16 13H8"
+                />
+                <path
+                  d="M16 17H8"
+                />
+              </svg>
+            </div>
+            <div
+              class="font-heading text-base leading-normal font-medium group-data-[size=sm]/card:text-sm"
+              data-slot="card-title"
+            >
+              Markdown + paste images
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+              data-slot="card-description"
+            >
+              Card bodies render full Markdown with a live preview toggle. Paste screenshots directly from your clipboard.
+            </div>
+          </div>
+        </div>
+        <div
+          class="group/card flex flex-col gap-6 overflow-hidden rounded-xl bg-card py-6 text-sm text-card-foreground shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group transition-all hover:-translate-y-0.5 hover:shadow-md"
+          data-size="default"
+          data-slot="card"
+        >
+          <div
+            class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-6 group-data-[size=sm]/card:px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4"
+            data-slot="card-header"
+          >
+            <div
+              class="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-accent text-accent-foreground"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-search size-4.5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21 21-4.34-4.34"
+                />
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="8"
+                />
+              </svg>
+            </div>
+            <div
+              class="font-heading text-base leading-normal font-medium group-data-[size=sm]/card:text-sm"
+              data-slot="card-title"
+            >
+              Instant search
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+              data-slot="card-description"
+            >
+              A single search bar scans every card title and body across all lanes. Press / anywhere to open it.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

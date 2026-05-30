@@ -1,0 +1,2409 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BoardMock snapshot > renders compact board consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="flex gap-3 overflow-x-auto pb-2 text-xs"
+  >
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-36 gap-1.5 p-2"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-[11px]"
+          >
+            Inbox
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-3.5 text-[9px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-2.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Review design system tokens
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-primary/12 text-primary"
+              >
+                design
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-4"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[8px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Set up a deployment pipeline
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-muted text-muted-foreground"
+              >
+                devops
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[9px]"
+              >
+                Jun 1
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Write API documentation
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-accent text-accent-foreground"
+              >
+                docs
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-36 gap-1.5 p-2"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-[11px]"
+          >
+            Today
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-3.5 text-[9px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-2.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Fix keyboard navigation bug
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-destructive/12 text-destructive"
+              >
+                bug
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-4"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[8px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Code review: auth PR #42
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-muted text-muted-foreground"
+              >
+                review
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-36 gap-1.5 p-2"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-[11px]"
+          >
+            This Week
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-3.5 text-[9px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-2.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Implement search feature
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[9px]"
+              >
+                Jun 4
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Add dark mode toggle
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Performance audit
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-accent text-accent-foreground"
+              >
+                perf
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-36 gap-1.5 p-2"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-[11px]"
+          >
+            Doing
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-3.5 text-[9px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-2.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1"
+      >
+        <div
+          class="rounded-lg transition-all p-2 space-y-1.5 ring-1 ring-primary/30 bg-primary/3"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Board drag & drop
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-4"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[8px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+        >
+          <p
+            class="font-medium text-foreground text-[11px]"
+          >
+            Landing page
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-accent text-accent-foreground"
+              >
+                marketing
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BoardMock snapshot > renders default board consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="flex gap-3 overflow-x-auto pb-2 text-sm"
+  >
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Inbox
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Review design system tokens
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                design
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Set up a deployment pipeline
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                devops
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[10px]"
+              >
+                Jun 1
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Write API documentation
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                docs
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Today
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Fix keyboard navigation bug
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-destructive/12 text-destructive"
+              >
+                bug
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Code review: auth PR #42
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                review
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            This Week
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Implement search feature
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[10px]"
+              >
+                Jun 4
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Add dark mode toggle
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Performance audit
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                perf
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Doing
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg transition-all p-3 space-y-2 ring-1 ring-primary/30 bg-primary/3"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Board drag & drop
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Landing page
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                marketing
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Done
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Initial project setup
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                setup
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Markdown card editor
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BoardMock snapshot > renders with highlighted card consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="flex gap-3 overflow-x-auto pb-2 text-sm"
+  >
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Inbox
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Review design system tokens
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                design
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Set up a deployment pipeline
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                devops
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[10px]"
+              >
+                Jun 1
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Write API documentation
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                docs
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Today
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card transition-all p-3 space-y-2 ring-2 ring-primary shadow-md shadow-primary/10"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Fix keyboard navigation bug
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-destructive/12 text-destructive"
+              >
+                bug
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Code review: auth PR #42
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                review
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            This Week
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Implement search feature
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[10px]"
+              >
+                Jun 4
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Add dark mode toggle
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Performance audit
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                perf
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Doing
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg transition-all p-3 space-y-2 ring-1 ring-primary/30 bg-primary/3"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Board drag & drop
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Landing page
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                marketing
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Done
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Initial project setup
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                setup
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Markdown card editor
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BoardMock snapshot > renders with highlighted lane consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="flex gap-3 overflow-x-auto pb-2 text-sm"
+  >
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3 ring-2 ring-primary shadow-lg shadow-primary/10"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Inbox
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Review design system tokens
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                design
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Set up a deployment pipeline
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                devops
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[10px]"
+              >
+                Jun 1
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Write API documentation
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                docs
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Today
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Fix keyboard navigation bug
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-destructive/12 text-destructive"
+              >
+                bug
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Code review: auth PR #42
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                review
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            This Week
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            3
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Implement search feature
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="text-muted-foreground tabular-nums text-[10px]"
+              >
+                Jun 4
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Add dark mode toggle
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Performance audit
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                perf
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Doing
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg transition-all p-3 space-y-2 ring-1 ring-primary/30 bg-primary/3"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Board drag & drop
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            >
+              <span
+                class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+                data-size="sm"
+                data-slot="avatar"
+              >
+                <span
+                  class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+                  data-slot="avatar-fallback"
+                >
+                  AP
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Landing page
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-accent text-accent-foreground"
+              >
+                marketing
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col shrink-0 rounded-2xl bg-sidebar transition-all w-52 gap-2 p-3"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-1.5"
+        >
+          <span
+            class="font-semibold text-foreground text-xs"
+          >
+            Done
+          </span>
+          <span
+            class="inline-flex items-center justify-center rounded-full bg-muted text-muted-foreground font-medium size-4.5 text-[10px]"
+          >
+            2
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-plus text-muted-foreground/60 shrink-0 size-3.5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14"
+          />
+          <path
+            d="M12 5v14"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Initial project setup
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-muted text-muted-foreground"
+              >
+                setup
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+        >
+          <p
+            class="font-medium text-foreground text-sm"
+          >
+            Markdown card editor
+          </p>
+          <div
+            class="flex items-center justify-between gap-2"
+          >
+            <div
+              class="flex flex-wrap gap-1"
+            >
+              <span
+                class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+              >
+                feature
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-1 shrink-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`KanbanCard snapshot > renders a card consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-3 space-y-2"
+  >
+    <p
+      class="font-medium text-foreground text-sm"
+    >
+      Test card
+    </p>
+    <div
+      class="flex items-center justify-between gap-2"
+    >
+      <div
+        class="flex flex-wrap gap-1"
+      >
+        <span
+          class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+        >
+          feature
+        </span>
+      </div>
+      <div
+        class="flex items-center gap-1 shrink-0"
+      >
+        <span
+          class="text-muted-foreground tabular-nums text-[10px]"
+        >
+          Jun 1
+        </span>
+        <span
+          class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+          data-size="sm"
+          data-slot="avatar"
+        >
+          <span
+            class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+            data-slot="avatar-fallback"
+          >
+            AP
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`KanbanCard snapshot > renders compact card consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-lg bg-card ring-1 ring-foreground/8 transition-all p-2 space-y-1.5"
+  >
+    <p
+      class="font-medium text-foreground text-[11px]"
+    >
+      Test card
+    </p>
+    <div
+      class="flex items-center justify-between gap-2"
+    >
+      <div
+        class="flex flex-wrap gap-1"
+      >
+        <span
+          class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[9px] bg-primary/12 text-primary"
+        >
+          feature
+        </span>
+      </div>
+      <div
+        class="flex items-center gap-1 shrink-0"
+      >
+        <span
+          class="text-muted-foreground tabular-nums text-[9px]"
+        >
+          Jun 1
+        </span>
+        <span
+          class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-4"
+          data-size="sm"
+          data-slot="avatar"
+        >
+          <span
+            class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[8px]"
+            data-slot="avatar-fallback"
+          >
+            AP
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`KanbanCard snapshot > renders highlighted card consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-lg bg-card transition-all p-3 space-y-2 ring-2 ring-primary shadow-md shadow-primary/10"
+  >
+    <p
+      class="font-medium text-foreground text-sm"
+    >
+      Test card
+    </p>
+    <div
+      class="flex items-center justify-between gap-2"
+    >
+      <div
+        class="flex flex-wrap gap-1"
+      >
+        <span
+          class="inline-flex items-center rounded-full px-1.5 py-0.5 font-medium text-[10px] bg-primary/12 text-primary"
+        >
+          feature
+        </span>
+      </div>
+      <div
+        class="flex items-center gap-1 shrink-0"
+      >
+        <span
+          class="text-muted-foreground tabular-nums text-[10px]"
+        >
+          Jun 1
+        </span>
+        <span
+          class="group/avatar relative flex shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten size-5"
+          data-size="sm"
+          data-slot="avatar"
+        >
+          <span
+            class="flex size-full items-center justify-center rounded-full bg-muted text-muted-foreground group-data-[size=sm]/avatar:text-xs text-[9px]"
+            data-slot="avatar-fallback"
+          >
+            AP
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
