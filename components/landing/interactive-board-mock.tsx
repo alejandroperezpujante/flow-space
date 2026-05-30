@@ -19,13 +19,13 @@ import {
   useSortable,
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
-  arrayMove,
 } from "@dnd-kit/sortable"
 import { CSS } from "@dnd-kit/utilities"
 import { cn } from "@/lib/utils"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Plus } from "lucide-react"
 import { type CardData, type LaneData, LANES, labelStyles } from "./board-data"
+import { findLaneByCardId, applyDragOver, applyDragEnd } from "@/lib/board/reducer"
 
 const CardVisual = memo(function CardVisual({ card, compact }: { card: CardData; compact?: boolean }) {
   return (
@@ -87,9 +87,6 @@ const SortableCard = memo(function SortableCard({ card, compact }: { card: CardD
   )
 })
 
-function findLaneByCardId(lanes: LaneData[], cardId: string): LaneData | undefined {
-  return lanes.find((l) => l.cards.some((c) => c.id === cardId))
-}
 
 const LaneColumn = memo(function LaneColumn({ lane }: { lane: LaneData }) {
   const items = useMemo(() => lane.cards.map((c) => c.id), [lane.cards])
@@ -146,53 +143,15 @@ export function InteractiveBoardMock({ className }: InteractiveBoardMockProps) {
     const activeId = active.id as string
     const overId = over.id as string
     if (activeId === overId) return
-
-    // Read from `prev` (not the closure) so stale state can't cause an infinite update loop
-    setLanes((prev) => {
-      const src = prev.find((l) => l.cards.some((c) => c.id === activeId))
-      if (!src) return prev
-
-      // over can be a lane id or a card id
-      const dst =
-        prev.find((l) => l.id === overId) ??
-        prev.find((l) => l.cards.some((c) => c.id === overId))
-      // Same lane → nothing to do (prevents oscillation at lane borders)
-      if (!dst || src.id === dst.id) return prev
-
-      const cardIdx = src.cards.findIndex((c) => c.id === activeId)
-      if (cardIdx === -1) return prev
-
-      const next = prev.map((l) => ({ ...l, cards: [...l.cards] }))
-      const nextSrc = next.find((l) => l.id === src.id)!
-      const nextDst = next.find((l) => l.id === dst.id)!
-      const [card] = nextSrc.cards.splice(cardIdx, 1)
-      const overCardIdx = nextDst.cards.findIndex((c) => c.id === overId)
-      if (overCardIdx === -1) {
-        nextDst.cards.push(card)
-      } else {
-        nextDst.cards.splice(overCardIdx, 0, card)
-      }
-      return next
-    })
+    setLanes((prev) => applyDragOver(prev, activeId, overId))
   }, [])
 
   const onDragEnd = useCallback(({ active, over }: DragEndEvent) => {
     setActiveCard(null)
     if (!over || active.id === over.id) return
-
     const activeId = active.id as string
     const overId = over.id as string
-
-    setLanes((prev) => {
-      const lane = prev.find((l) => l.cards.some((c) => c.id === activeId))
-      if (!lane) return prev
-      const oldIdx = lane.cards.findIndex((c) => c.id === activeId)
-      const newIdx = lane.cards.findIndex((c) => c.id === overId)
-      if (oldIdx === -1 || newIdx === -1 || oldIdx === newIdx) return prev
-      return prev.map((l) =>
-        l.id === lane.id ? { ...l, cards: arrayMove(l.cards, oldIdx, newIdx) } : l
-      )
-    })
+    setLanes((prev) => applyDragEnd(prev, activeId, overId))
   }, [])
 
   return (
