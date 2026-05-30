@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { useTheme } from "next-themes"
+import { useTheme, type Theme } from "@/lib/theme"
 import { Monitor, Moon, Sun } from "lucide-react"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -18,7 +18,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <Tabs value={theme} onValueChange={setTheme}>
+    <Tabs value={theme} onValueChange={(v) => setTheme(v as Theme)}>
       <TabsList className="h-8">
         <TabsTrigger value="system" aria-label="System theme" className="px-2">
           <Monitor className="size-3.5" />
